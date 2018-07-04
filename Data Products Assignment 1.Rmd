@@ -1,0 +1,34 @@
+---
+title: "Data Products Assignment 1"
+author: "Andrew Kaiser-Tedesco"
+date: "July 4, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##Places I've lived
+
+Size of the bubbles indicates more time in that place. 
+
+```{r}
+suppressPackageStartupMessages(library(leaflet))
+
+df <- read.csv("myplaces.csv")
+
+df %>% leaflet() %>%
+        addTiles() %>%
+        addCircles(lat = df$lat,
+                   lng = df$lng,
+                   weight = 1,
+                   radius = sqrt(df$time)*10^5.5,
+                   color = "red",
+                   popup = df$place)
+
+        
+
+
+
+```
