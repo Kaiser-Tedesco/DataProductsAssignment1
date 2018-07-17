@@ -1,0 +1,12 @@
+name: Airquality
+title: Airquality
+username:
+account: andrewkaisertedesco
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 382385
+bundleId: 1483918
+url: https://andrewkaisertedesco.shinyapps.io/Airquality/
+when: 1531818094.75543
+asMultiple: FALSE
+asStatic: FALSE
